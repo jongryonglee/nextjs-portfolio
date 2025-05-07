@@ -98,7 +98,7 @@ const Work = () => {
 
       {/* YouTube Player */}
       {hoveredVideo && (
-        <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-80 flex items-center justify-center z-50">
+        <div className="fixed top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.8)] flex items-center justify-center z-50">
           <ReactPlayer
             url={hoveredVideo}
             playing
