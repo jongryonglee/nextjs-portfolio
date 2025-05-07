@@ -62,7 +62,7 @@ const TextData = {
     {
       description:
         "Built dashboard interfaces using Next.js and implemented features such as form inputs, text editors, and image uploaders for an art school.",
-      url: "https://youtu.be/KlZ-QmPteqM?si=X9yjAx5pq2TkrsS5",
+      url: "https://youtu.be/qWIXWAu8nGI",
       image: "/dashboard.png",
     },
     {
