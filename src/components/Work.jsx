@@ -55,7 +55,10 @@ const Work = () => {
   );
 
   return (
-    <div className="w-full h-full px-16 space-y-8" ref={containerRef}>
+    <div
+      className="mt-[80px] sm:mt-[100px] pb-4 w-full h-full px-8 sm:px-16 space-y-8"
+      ref={containerRef}
+    >
       <h2
         className="work-title text-7xl font-extrabold text-center text-green-400"
         style={{ fontFamily: "var(--font-impact)" }}
@@ -80,12 +83,14 @@ const Work = () => {
               <p className="text-gray-300 text-center px-4 pb-4">
                 {project.description}
               </p>
-              <button
-                className="mt-4 px-4 py-2 bg-green-500 text-white rounded-lg shadow hover:bg-green-600"
-                onClick={() => setHoveredVideo(project.url)}
-              >
-                Watch Demo
-              </button>
+              {project.url ? (
+                <button
+                  className="mt-4 px-4 py-2 bg-green-500 text-white rounded-lg shadow hover:bg-green-600"
+                  onClick={() => setHoveredVideo(project.url)}
+                >
+                  Watch Demo
+                </button>
+              ) : null}
             </div>
           </div>
         ))}

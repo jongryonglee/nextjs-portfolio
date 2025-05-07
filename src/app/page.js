@@ -4,11 +4,8 @@ import Home from "@/components/Home";
 import Work from "@/components/Work";
 export default function Page() {
   return (
-    <div className="overflow-y-auto scroll-smooth">
-      <section
-        id="home"
-        className="h-[calc(100vh-80px)] sm:h-[calc(100vh-100px)] flex items-center justify-center"
-      >
+    <div className="scroll-smooth">
+      <section id="home" className="flex items-center justify-center">
         <Home />
       </section>
       <section id="about" className="flex items-center justify-center">

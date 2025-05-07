@@ -61,27 +61,20 @@ const TextData = {
   projects: [
     {
       description:
-        "A personal portfolio website showcasing my skills, projects, and experience. Built with React and Tailwind CSS.",
+        "Built dashboard interfaces using Next.js and implemented features such as form inputs, text editors, and image uploaders for an art school.",
       url: "https://youtu.be/KlZ-QmPteqM?si=X9yjAx5pq2TkrsS5",
       image: "/dashboard.png",
     },
     {
       description:
-        "An e-commerce platform with a fully functional shopping cart and payment gateway integration. Built with Next.js and Stripe.",
-      url: "https://youtu.be/KlZ-QmPteqM?si=X9yjAx5pq2TkrsS5",
+        "Developed a responsive portfolio website in PHP for a design studio CEO, with WordPress-based admin functionality for easy content editing",
+      url: "https://www.youtube.com/watch?v=nE8qSj6nyP0",
       image: "/website.png",
     },
     {
       description:
-        "A blog application where users can create, edit, and delete posts. Built with Node.js and MongoDB.",
-      url: "https://youtu.be/KlZ-QmPteqM?si=X9yjAx5pq2TkrsS5",
+        "Built a portfolio website using Next.js and TailwindCSS for styling. Used GSAP for animations and transitions.",
       image: "/Portfolio.png",
-    },
-    {
-      description:
-        "A social media application with real-time chat and notifications. Built with React and Firebase.",
-      url: "https://youtu.be/KlZ-QmPteqM?si=X9yjAx5pq2TkrsS5",
-      image: "/window.svg",
     },
   ],
 };

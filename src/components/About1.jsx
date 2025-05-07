@@ -61,7 +61,7 @@ export default function About1() {
       gsap.from(elements, {
         scrollTrigger: {
           trigger: skillsRef.current,
-          start: "top 40%",
+          start: "top 60%",
           end: "bottom 95%",
           scrub: 2,
           // markers: true,
@@ -77,7 +77,7 @@ export default function About1() {
   );
 
   return (
-    <div className="w-full h-full px-8 py-16 space-y-32">
+    <div className="mt-[80px] sm:mt-[100px] w-full h-full px-8 py-16 space-y-32">
       {/* Introduction Section */}
       <div
         className="flex flex-col items-center text-left space-y-6"
@@ -95,7 +95,7 @@ export default function About1() {
       </div>
 
       {/* Skills Section */}
-      <div ref={skillsRef} className="space-y-16 mt-16">
+      <div ref={skillsRef} className="space-y-32 my-48">
         {skills.map((section, index) => (
           <div
             key={index}

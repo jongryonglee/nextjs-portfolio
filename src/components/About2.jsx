@@ -56,7 +56,7 @@ export default function About2() {
   );
 
   return (
-    <div className="w-full h-full px-8 py-16 space-y-32 my-32">
+    <div className="w-full h-full px-8 py-16 space-y-32">
       {/* Experience Section */}
       <div ref={experienceRef} className="space-y-16">
         <div className="flex flex-col items-center text-left space-y-6">
@@ -69,7 +69,7 @@ export default function About2() {
         </div>
 
         {/* Work Experience List */}
-        <div className="space-y-8 experience-content">
+        <div className="space-y-8 experience-content my-16">
           {workData.map((work, index) => (
             <div
               key={index}

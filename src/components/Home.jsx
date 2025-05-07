@@ -1,6 +1,6 @@
 const Home = () => {
   return (
-    <div className="h-full grid grid-cols-1 md:grid-cols-3 gap-8 items-center px-6 md:px-16 py-12 text-white">
+    <div className="mt-[80px] sm:mt-[100px] min-h-[calc(100vh-80px)] sm:min-h-[calc(100vh-100px)] h-full grid grid-cols-1 md:grid-cols-3 gap-8 items-center px-6 md:px-16 py-12 text-white">
       {/* Left Contents */}
       <div className="col-span-2 text-center md:text-left">
         <h1
