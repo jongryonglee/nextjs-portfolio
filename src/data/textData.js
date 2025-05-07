@@ -37,7 +37,7 @@ const TextData = {
         { label: "HTML5", icon: "/html5.svg" },
         { label: "CSS3", icon: "/css3.svg" },
         { label: "JavaScript", icon: "/javascript.svg" },
-        { label: "React", icon: "/react.png" },
+        { label: "React", icon: "/React.png" },
         { label: "Next.js", icon: "/Next.js.png" },
         { label: "Redux", icon: "/Redux.png" },
         { label: "Tailwind CSS", icon: "/tailwind.png" },
@@ -63,13 +63,13 @@ const TextData = {
       description:
         "Built dashboard interfaces using Next.js and implemented features such as form inputs, text editors, and image uploaders for an art school.",
       url: "https://youtu.be/qWIXWAu8nGI",
-      image: "/dashboard.jpeg",
+      image: "/dashboards.png",
     },
     {
       description:
         "Developed a responsive portfolio website in PHP for a design studio CEO, with WordPress-based admin functionality for easy content editing",
       url: "https://www.youtube.com/watch?v=nE8qSj6nyP0",
-      image: "/website.jpeg",
+      image: "/takeisme.png",
     },
     {
       description:
