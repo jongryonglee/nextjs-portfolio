@@ -17,7 +17,9 @@ const NavBar = () => {
           if (entry.isIntersecting) {
             const id = entry.target.id;
             const currentTab = tabs.find((tab) => tab.targetId === id);
-            if (currentTab) setActive(currentTab.name);
+            if (currentTab) {
+              setActive(currentTab.name);
+            }
           }
         });
       },

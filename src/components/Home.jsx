@@ -1,28 +1,33 @@
 const Home = () => {
   return (
-    <div className="h-full grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-6 md:px-16 py-12 text-white">
-      {/* 左テキスト */}
-      <div className="text-center md:text-left space-y-6">
+    <div className="h-full grid grid-cols-1 md:grid-cols-3 gap-8 items-center px-6 md:px-16 py-12 text-white">
+      {/* Left Contents */}
+      <div className="col-span-2 text-center md:text-left">
         <h1
-          className="text-7xl sm:text-8xl font-extrabold"
-          style={{ fontFamily: "var(--font-anton)" }}
+          className="text-7xl sm:text-8xl font-extrabold fade-in-section"
+          style={{ fontFamily: "var(--font-impact)" }}
         >
-          FRONTEND <br /> DEVELOPER
+          JON LEE
         </h1>
-        <p className="text-lg sm:text-xl text-white/80">
-          A passionate web developer specializing in React, Next.js, and UI
-          design.
-          <br />I love building interactive and beautiful web experiences.
+        <h2 className="text-[16px] sm:text-[22px] font-normal mb-4">
+          FRONTEND DEVELOPER
+        </h2>
+        <p className="text-lg sm:text-xl text-white/60">
+          I build sleek, functional websites <br />
+          tailored to your vision.
         </p>
       </div>
 
-      {/* 右画像 */}
-      <div className="flex justify-center">
+      {/* Rigth Contents */}
+      <div className="col-span-1 flex justify-center">
         <img
           src="/FaceLogo.png"
           alt="Jon Lee"
           className="w-64 sm:w-80 md:w-96 rounded-xl object-cover"
         />
+      </div>
+      <div className="absolute bottom-6 pb-0 left-1/2 -translate-x-1/2 scroll-indicator">
+        <img src="/arrow.png" alt="Scroll Down" />
       </div>
     </div>
   );

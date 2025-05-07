@@ -5,7 +5,7 @@ const Stars = ({ count = 10 }) => {
   const stars = Array.from({ length: count });
 
   return (
-    <>
+    <div className="fixed top-0 left-0 w-full h-full　z-0 pointer-events-none">
       {stars.map((_, i) => {
         const style = {
           left: `${Math.random() * 100}%`,
@@ -17,7 +17,7 @@ const Stars = ({ count = 10 }) => {
         };
         return <div key={i} className="star" style={style}></div>;
       })}
-    </>
+    </div>
   );
 };
 

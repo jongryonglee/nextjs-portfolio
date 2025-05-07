@@ -1,28 +1,56 @@
-// app/layout.js
+"use client";
+import React, { useState, useEffect } from "react";
 import NavBar from "@/components/Navbar";
 import "./globals.css";
 import Stars from "@/components/Stars";
 import Logo from "@/components/Logo";
 import SocialIcons from "@/components/SocialIcons";
+import Footer from "@/components/Footer";
 
 export default function RootLayout({ children }) {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (isLoading) {
+    return (
+      <html lang="en">
+        <body>
+          <div className="min-h-screen bg-fixed bg-gradient-to-b from-[#000428] via-[#004e92] to-[#000000] relative">
+            {/* Header */}
+            <div className="z-50 fixed top-0 left-0 w-full flex justify-between items-center px-8 py-4 sm:px-16 sm:py-8 text-white h-[80px] sm:h-[100px]">
+              <Logo />
+              <NavBar />
+              <SocialIcons />
+            </div>
+          </div>
+        </body>
+      </html>
+    );
+  }
   return (
     <html lang="en">
       <body>
-        <div className="min-h-screen h-screen bg-gradient-to-b from-[#000428] via-[#004e92] to-[#000000] relative">
+        <div className="min-h-screen bg-fixed bg-gradient-to-b from-[#000428] via-[#004e92] to-[#000000] relative">
           <Stars count={40} />
 
           {/* Header */}
-          <div className="flex justify-between items-center px-8 py-4 sm:px-16 sm:py-8 text-white z-50 h-[80px] sm:h-[100px]">
+          <div className="z-50 fixed top-0 left-0 w-full flex justify-between items-center px-8 py-4 sm:px-16 sm:py-8 text-white h-[80px] sm:h-[100px]">
             <Logo />
             <NavBar />
             <SocialIcons />
           </div>
 
           {/* Main content area */}
-          <div className="h-[calc(100vh-80px)] sm:h-[calc(100vh-120px)] overflow-y-auto scroll-smooth">
-            {children}
-          </div>
+          <div>{children}</div>
+          {/* Footer */}
+          <Footer />
         </div>
       </body>
     </html>
