@@ -63,13 +63,13 @@ const TextData = {
       description:
         "Built dashboard interfaces using Next.js and implemented features such as form inputs, text editors, and image uploaders for an art school.",
       url: "https://youtu.be/qWIXWAu8nGI",
-      image: "/dashboard.png",
+      image: "/dashboard.jpeg",
     },
     {
       description:
         "Developed a responsive portfolio website in PHP for a design studio CEO, with WordPress-based admin functionality for easy content editing",
       url: "https://www.youtube.com/watch?v=nE8qSj6nyP0",
-      image: "/website.png",
+      image: "/website.jpeg",
     },
     {
       description:
