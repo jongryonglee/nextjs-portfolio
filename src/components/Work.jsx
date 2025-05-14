@@ -83,13 +83,24 @@ const Work = () => {
               <p className="text-gray-300 text-center px-4 pb-4">
                 {project.description}
               </p>
-              {project.url ? (
+              {project.videourl ? (
                 <button
                   className="mt-4 px-4 py-2 bg-green-500 text-white rounded-lg shadow hover:bg-green-600"
-                  onClick={() => setHoveredVideo(project.url)}
+                  onClick={() => setHoveredVideo(project.videourl)}
                 >
                   Watch Demo
                 </button>
+              ) : null}
+              {project.websiteurl ? (
+                <a
+                  href={project.websiteurl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-2 px-4 py-2 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600"
+                  style={{ display: "inline-block" }}
+                >
+                  Visit Website
+                </a>
               ) : null}
             </div>
           </div>

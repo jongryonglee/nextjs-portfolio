@@ -62,19 +62,26 @@ const TextData = {
     {
       description:
         "Built dashboard interfaces using Next.js and implemented features such as form inputs, text editors, and image uploaders for an art school.",
-      url: "https://youtu.be/qWIXWAu8nGI",
+      videourl: "https://youtu.be/qWIXWAu8nGI",
       image: "/dashboards.png",
     },
     {
       description:
-        "Developed a responsive portfolio website in PHP for a design studio CEO, with WordPress-based admin functionality for easy content editing",
-      url: "https://www.youtube.com/watch?v=nE8qSj6nyP0",
-      image: "/takeisme.png",
+        "Develped an AI web application using Next.js and TailwindCSS for styling. Used ChatGPT for recipes, DALL-E for visuals",
+      image: "/CookAI.png",
+      websiteurl: "https://cook-ai-six.vercel.app/",
     },
     {
       description:
         "Built a portfolio website using Next.js and TailwindCSS for styling. Used GSAP for animations and transitions.",
       image: "/Portfolio.png",
+      websiteurl: "https://jonlee.vercel.app/",
+    },
+    {
+      description:
+        "Developed a responsive portfolio website in PHP for a design studio CEO, with WordPress-based admin functionality for easy content editing",
+      videourl: "https://www.youtube.com/watch?v=nE8qSj6nyP0",
+      image: "/takeisme.png",
     },
   ],
 };
